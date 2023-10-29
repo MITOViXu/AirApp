@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AirApp</string>
+    <string-array name="categories">
+        <item>Huminity</item>
+        <item>Wind</item>
+        <item>Sun</item>
+        <item>Water Level</item>
+        <item>Temperature</item>
+    </string-array>
 </resources>

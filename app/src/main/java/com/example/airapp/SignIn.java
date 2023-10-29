@@ -3,6 +3,7 @@ package com.example.airapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +27,15 @@ public class SignIn extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+        Button login = findViewById(R.id.buttonLogin);
+        Intent intent = new Intent();
+        intent.setClass(SignIn.this, MainDashboard.class);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intent);
             }
         });
     }
