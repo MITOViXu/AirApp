@@ -4,11 +4,11 @@ plugins {
 
 android {
     namespace = "com.example.airapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.airapp"
-        minSdk = 24
+        minSdk = 21
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -43,4 +43,10 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("com.airbnb.android:lottie:6.1.0")
+    implementation("com.squareup.retrofit2:retrofit:2.1.0")
+    implementation("com.google.code.gson:gson:2.6.2")
+    implementation("com.squareup.retrofit2:converter-gson:2.1.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:3.4.1")
+    implementation("com.mapbox.maps:android:10.14.1")
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }

@@ -1,10 +1,72 @@
 <resources>
     <string name="app_name">AirApp</string>
-    <string-array name="categories">
-        <item>Huminity</item>
-        <item>Wind</item>
-        <item>Sun</item>
-        <item>Water Level</item>
-        <item>Temperature</item>
-    </string-array>
+    <string name="welcome_message">Chào mừng</string>
+    <string name="title_viet">Ứng dụng thu thập dữ liệu về nhiệt độ và độ ẩm</string>
+    <string name="another_viet">Nếu bạn chưa có tài khoản</string>
+    <string name="signin_viet">Đăng nhập</string>
+    <string name="signup_viet">Đăng ký</string>
+    <string name="continue_viet">Tiếp tục với google</string>
+    <string name="forget_viet">Quên mật khẩu ?</string>
+    <string name="contact_viet">Liên hệ: 0900150900</string>
+    <string name="titleSignInVi">Đăng nhập</string>
+    <string name="placeuser_Vi">Tên tài khoản...</string>
+    <string name="placepass_Vi">Mật khẩu...</string>
+    <string name="btnSignIn_Vi">Đăng nhập</string>
+    <string name="another_signIn_vi">Hoặc đăng nhập với</string>
+    <string name="email_title_Vi">Địa chỉ email của bạn</string>
+    <string name="userName_title_Vi">Tên người dung của bạn</string>
+    <string name="pass_title_Vi">Nhập mật khẩu của bạn</string>
+    <string name="rePass_title_Vi">Nhập lại mật khẩu của bạn</string>
+    <string name="btn_SignUp_Vi">Đăng kí</string>
+    <!--    English-->
+    <string name="welcome_message_english">Welcome</string>
+    <string name="title_english">The application collects data about humidity</string>
+    <string name="another_english">If you do not have an acount</string>
+    <string name="signin_english">Sign in</string>
+    <string name="signup_english">Sign up</string>
+    <string name="continue_english">Continue with google</string>
+    <string name="forget_english">Forget password ?</string>
+    <string name="contact_english">Contact: 0900150900</string>
+    <string name="titleSignInEng">Sign In</string>
+    <string name="placeuser_Eng">User name...</string>
+    <string name="placepass_Eng">Password...</string>
+    <string name="btnSignIn_Eng">Login</string>
+    <string name="another_signIn_Eng">Or Sign in with</string>
+    <string name="email_title_En">Your email address</string>
+    <string name="userName_title_En">Your user name</string>
+    <string name="pass_title_En">Your password</string>
+    <string name="rePass_title_En">Confirm pass word</string>
+    <string name="btn_SignUp_En">Register</string>
+    <!--    Chinese-->
+    <string name="welcome_message_chinese">欢迎</string>
+    <string name="chínese">欢迎来到</string>
+    <string name="title_chinese">该应用程序收集有关温度和湿度的数据</string>
+    <string name="another_chinese">如果您没有帐户</string>
+    <string name="signin_chinese">登录</string>
+    <string name="signup_chinese">登记</string>
+    <string name="continue_chinese">继续 google</string>
+    <string name="forget_chinese">忘记密码 ?</string>
+    <string name="contact_chinese">联系方式：0900150900</string>
+    <string name="titleSignInChinese">登录</string>
+    <string name="placeuser_Chinese">帐户名称...</string>
+    <string name="placepass_Chinese">密码...</string>
+    <string name="btnSignIn_Chinese">登录</string>
+    <string name="another_signIn_Chinese">或登录</string>
+    <string name="email_title_Chinese">您的电子邮件地址</string>
+    <string name="userName_title_Chinese">您的用户名</string>
+    <string name="pass_title_Chinese">你的密码</string>
+    <string name="rePass_title_Chinese">确认你的密码</string>
+    <string name="btn_SignUp_Chinese">登记</string>
+
+
+    <!--    Tiếng việt-->
+    <string name="app_name_viet">Thời tiết</string>
+    <!--    Tiếng anh-->
+    <string name="app_name_english">Thời tiết</string>
+
+    <!-- url -->
+    <string name="baseURL">https://uiot.ixxc.dev</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

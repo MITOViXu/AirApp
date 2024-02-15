@@ -1,4 +1,4 @@
-package com.example.airapp;
+package com.example.airapp.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
+import com.example.airapp.R;
 
 public class Graph extends AppCompatActivity {
     String[] items = {"Huminity", "Wind","Sun","Water Level","Temperature" };

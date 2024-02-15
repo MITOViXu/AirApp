@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_list"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -44,29 +44,6 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="40dp"
-                    android:layout_height="20dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView3"
-                    app:layout_constraintHorizontal_bias="0.736"
-                    app:layout_constraintStart_toEndOf="@+id/textView"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@mipmap/vietnam" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="24dp"
-                    android:text="La: Vi"
-                    android:textColor="#FFFFFF"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView3"
-                    app:layout_constraintStart_toEndOf="@+id/imageView"
-                    app:layout_constraintTop_toTopOf="@+id/imageView" />
-
-                <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -86,23 +63,59 @@
                     app:layout_constraintTop_toBottomOf="@+id/imageView3"
                     app:layout_constraintVertical_bias="0.772"
                     app:srcCompat="@drawable/red_circle" />
+
+                <ImageView
+                    android:id="@+id/imageFlag"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="116dp"
+                    android:layout_marginEnd="2dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textInputLayout3"
+                    app:layout_constraintEnd_toStartOf="@+id/textInputLayout3"
+                    app:layout_constraintHorizontal_bias="0.65"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="@+id/textInputLayout3"
+                    app:srcCompat="@mipmap/vietnam" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout3"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:hint="LA"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.782"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView3">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoLanguage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:inputType="none"
+                        android:text="LA" />
+
+                </com.google.android.material.textfield.TextInputLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:padding="20dp">
+                android:layout_gravity="center">
 
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/akaya_telivigala"
-                    android:text="Chào mừng đén với HuAirApp"
-                    android:textColor="#FFFFFF"
+                    android:text="Chào mừng"
 
-                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -113,23 +126,24 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="monospace"
-                    android:text="Ứng dụng thu thập dữ liệu về độ ẩm"
+                    android:gravity="center"
+                    android:text="Ứng dụng thu thập dữ liệu thiên nhiên"
                     android:textColor="#FFFFFF"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/sign_in2"
+                    android:id="@+id/btn_signInMainActivity"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="50dp"
                     android:background="@drawable/sign_in"
 
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="Sign in"
+                    android:text="Đăng nhập"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -137,20 +151,24 @@
 
                 <ImageView
                     android:id="@+id/imageView7"
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
+                    android:layout_width="270dp"
+                    android:layout_height="270dp"
                     android:layout_marginTop="8dp"
+                    android:background="@drawable/hinhtron"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.495"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView4"
-                    app:srcCompat="@mipmap/environment" />
+                    app:srcCompat="@drawable/huairlogo" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
 
                 <View
                     android:id="@+id/view"
@@ -176,13 +194,13 @@
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Nếu bạn chưa có tài khoản"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.504"
 
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0" />
@@ -194,7 +212,7 @@
                 android:layout_height="match_parent">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_signup"
+                    android:id="@+id/btn_signupMainActivity"
                     android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
@@ -202,14 +220,14 @@
                     android:layout_marginEnd="50dp"
                     android:background="@drawable/continue_google"
                     android:fontFamily="@font/andika_new_basic_bold"
-                    android:text="Sign up"
+                    android:text="Đăng ký"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button3"
+                    android:id="@+id/btn_continueMainActivity"
                     android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
@@ -217,11 +235,11 @@
                     android:layout_marginEnd="50dp"
                     android:background="@drawable/continue_google"
                     android:fontFamily="@font/andika_new_basic_bold"
-                    android:text="Continue with google"
+                    android:text="Tiếp tục với GOOGLE"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
+                    app:layout_constraintTop_toBottomOf="@+id/btn_signupMainActivity" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -235,7 +253,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.498"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button3" />
+                    app:layout_constraintTop_toBottomOf="@+id/btn_continueMainActivity" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -247,7 +265,7 @@
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="8dp"
                     android:text="Liên hệ: 0900150900"
                     android:textColor="#989898"
                     app:layout_constraintEnd_toEndOf="parent"

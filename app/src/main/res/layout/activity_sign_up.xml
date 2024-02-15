@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/sign_up"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/nature"
-    android:gravity="center"
     android:layout_height="match_parent"
-    tools:context=".SignUp">
+    android:background="@drawable/main_slider"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.SignUp">
 
     <ImageButton
         android:id="@+id/btn_back_register"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/logo_background"
         android:src="@drawable/arrow"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,28 +31,29 @@
         app:cardElevation="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="#DAFFFFFF">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:gravity="clip_vertical|center_horizontal"
             android:orientation="vertical"
             android:padding="24dp">
 
-            <TextView
-                android:id="@+id/loginText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sign Up"
-                android:textAlignment="center"
-                android:textColor="#6a2dcc"
-                android:textSize="36sp"
-                android:textStyle="bold" />
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnimationView2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/signup" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/emailTitleSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
@@ -61,6 +62,7 @@
                 tools:textSize="20sp" />
 
             <EditText
+                android:id="@+id/emailSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -68,11 +70,12 @@
                 android:drawableLeft="@drawable/baseline_email_24"
                 android:drawablePadding="8dp"
                 android:hint="email address..."
+                android:inputType="text"
                 android:padding="8dp"
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/userTitleSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -81,6 +84,7 @@
                 tools:textSize="20sp" />
 
             <EditText
+                android:id="@+id/userNameSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -88,11 +92,12 @@
                 android:drawableLeft="@drawable/baseline_person_24"
                 android:drawablePadding="8dp"
                 android:hint="user name..."
+                android:inputType="text"
                 android:padding="8dp"
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/passTitleSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -101,6 +106,7 @@
                 tools:textSize="20sp" />
 
             <EditText
+                android:id="@+id/passwordSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -113,7 +119,7 @@
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/rePassTitleSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -122,6 +128,7 @@
                 tools:textSize="20sp" />
 
             <EditText
+                android:id="@+id/confirmPassWord"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -137,7 +144,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button2"
+        android:id="@+id/btnSignUp"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -148,6 +155,14 @@
         app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
-        tools:textSize="30sp" />
+        tools:textSize="30dp" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="113dp"
+        android:layout_height="101dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:layout_editor_absoluteX="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
